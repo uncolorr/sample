@@ -51,29 +51,6 @@ class  ConfigReader(val context: Context) {
         return result
     }
 
-   /* fun getConfigData(): Map<String, String>? {
-        val data = getDataFromConfigFile() ?: return null
-        return parseData(data) ?: return null
-    }
-
-    private fun getDataFromConfigFile(): String? {
-        val path = context.getExternalFilesDir(null)!!.absolutePath + File.separator + FILENAME
-        val file = File(path)
-        App.log("file path: " + file.absoluteFile)
-        if (!file.exists()) {
-            App.log("file not exists")
-            return null
-        }
-
-        val bufferedReader: BufferedReader = file.bufferedReader()
-        val result = bufferedReader.use { it.readText() }
-        if (result.isEmpty()) {
-            return null
-        }
-        App.log("file data: $result")
-        return result
-    }*/
-
     private fun checkAllDataContains(params: Map<String, String>): Boolean {
         if (params.size != FINAL_PARAMS_COUNT) {
             App.log("Wrong params count")
