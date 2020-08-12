@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".presentation.settings.SettingsActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <include layout="@layout/toolbar_settings" />
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/base_х2"
+            android:layout_marginRight="@dimen/base_х2"
+            android:hint="Компания"
+            app:boxBackgroundColor="@android:color/white"
+            app:boxBackgroundMode="outline"
+            app:boxStrokeColor="@color/colorBlue"
+            app:hintTextColor="@color/colorBlue">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextCompanyName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:textColor="@color/colorLightBlack" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/base_х2"
+            android:layout_marginTop="@dimen/base"
+            android:layout_marginRight="@dimen/base_х2"
+            android:hint="Адрес"
+            app:boxBackgroundColor="@android:color/white"
+            app:boxBackgroundMode="outline"
+            app:boxStrokeColor="@color/colorBlue"
+            app:hintTextColor="@color/colorBlue">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextDomain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:textColor="@color/colorLightBlack" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/base_х2"
+            android:layout_marginTop="@dimen/base"
+            android:layout_marginRight="@dimen/base_х2"
+            android:hint="Порт"
+            app:boxBackgroundColor="@android:color/white"
+            app:boxBackgroundMode="outline"
+            app:boxStrokeColor="@color/colorBlue"
+            app:hintTextColor="@color/colorBlue">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextPort"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionNext"
+                android:inputType="number" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/base_х2"
+            android:layout_marginTop="@dimen/base"
+            android:layout_marginRight="@dimen/base_х2"
+            android:hint="@string/login_hint"
+            app:boxBackgroundColor="@android:color/white"
+            app:boxBackgroundMode="outline"
+            app:boxStrokeColor="@color/colorBlue"
+            app:hintTextColor="@color/colorBlue">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionNext"
+                android:inputType="text" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/base_х2"
+            android:layout_marginTop="@dimen/base"
+            android:layout_marginRight="@dimen/base_х2"
+            android:hint="@string/password_hint"
+            app:boxBackgroundColor="@android:color/white"
+            app:boxBackgroundMode="outline"
+            app:boxStrokeColor="@color/colorBlue"
+            app:hintTextColor="@color/colorBlue">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionNext"
+                android:inputType="textPassword" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/base_х2"
+            android:layout_marginTop="@dimen/base_х2"
+            android:layout_marginRight="@dimen/base_х2"
+            android:layout_marginBottom="@dimen/base_х2"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textViewTokenState"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/base_х2"
+                android:layout_weight="1"
+                android:text="Токен авторизации приложения"
+                android:textColor="@color/colorLightBlack" />
+
+            <ImageView
+                android:id="@+id/imageViewTokenState"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginEnd="2dp" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/base_х2"
+            android:layout_marginTop="@dimen/base"
+            android:layout_marginRight="@dimen/base_х2"
+            android:text="Выберите кодировку для считывания данных:"
+            android:textColor="@color/colorLightBlack" />
+
+
+        <Spinner
+            android:id="@+id/spinnerCodecs"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="@dimen/base_х2"
+            android:layout_marginTop="@dimen/base"
+            android:layout_marginRight="@dimen/base_х2"
+            android:elevation="2dp"
+            tools:targetApi="lollipop" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/base_х2"
+            android:layout_marginTop="@dimen/base"
+            android:layout_marginRight="@dimen/base_х2"
+            android:text="Выберите тип устройства:"
+            android:textColor="@color/colorLightBlack" />
+
+        <Spinner
+            android:id="@+id/spinnerDeviceTypes"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="@dimen/base_х2"
+            android:layout_marginTop="@dimen/base"
+            android:layout_marginRight="@dimen/base_х2"
+            android:elevation="2dp"
+            tools:targetApi="lollipop" />
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonAuth"
+            style="@style/Widget.MaterialComponents.Button.Icon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginLeft="@dimen/base_х2"
+            android:layout_marginTop="@dimen/base"
+            android:layout_marginRight="@dimen/base_х2"
+            android:text="Сохранить и продолжить"
+            android:textAllCaps="false"
+            app:backgroundTint="@color/colorBlue"
+            app:icon="@drawable/ic_check"
+            app:iconGravity="textStart" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonLoadFromConfigFile"
+            style="@style/Widget.MaterialComponents.Button.Icon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginLeft="@dimen/base_х2"
+            android:layout_marginTop="@dimen/base"
+            android:layout_marginRight="@dimen/base_х2"
+            android:layout_marginBottom="@dimen/base_х2"
+            android:text="Загрузить настройки из файла"
+            android:textAllCaps="false"
+            android:textColor="@color/colorLightBlack"
+            app:backgroundTint="@color/colorWhite"
+            app:icon="@drawable/ic_file"
+            app:iconGravity="textStart"
+            app:iconTint="@color/colorLightBlack" />
+
+
+        <TextView
+            android:id="@+id/textViewTitle"
+            style="@style/TitleMediumTextViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginStart="@dimen/base_х2"
+            android:layout_marginBottom="@dimen/base_х2"
+            android:layout_marginEnd="@dimen/base_х2"
+            android:layout_weight="1"
+            android:visibility="gone"
+            android:text="Прочее" />
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonCheckUpdates"
+            style="@style/Widget.MaterialComponents.Button.Icon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginLeft="@dimen/base_х2"
+            android:layout_marginRight="@dimen/base_х2"
+            android:visibility="gone"
+            android:text="Проверить обновления"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite"
+            app:backgroundTint="@color/colorBlue"
+            app:iconGravity="textStart"
+            app:iconTint="@color/colorLightBlack" />
+
+
+        <com.google.android.material.checkbox.MaterialCheckBox
+            android:id="@+id/checkboxCheckUpdatesAutomatically"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/base_х2"
+            android:layout_marginRight="@dimen/base_х2"
+            android:visibility="gone"
+            android:text="Проверять обновления автоматически">
+
+        </com.google.android.material.checkbox.MaterialCheckBox>
+
+
+        <TextView
+            android:id="@+id/textViewBuildVersionName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/base"
+            android:layout_marginLeft="@dimen/base_х2"
+            android:layout_marginRight="@dimen/base_х2"
+            android:layout_marginBottom="@dimen/base_х2"
+            android:textAlignment="center"
+            android:textColor="@color/colorLightBlack"
+            tools:text="v1.0.1" />
+
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">STORE</string>
+
+    <string name="empty" />
+    <string name="tag_id">tag_object</string>
+    <string name="tag_object">tag_object</string>
+    <string name="tag_key">tag_key</string>
+    <string name="tag_vh">tag_vh</string>
+
+    <!--**************************************************************************************** -->
+<!--
+    <color name="colorPrimary">#2c2c35</color>
+    <color name="colorPrimaryDark">#2c2c35</color>
+    <color name="colorAccent">#D81B60</color>-->
+
+    <!--**************************************************************************************** -->
+
+    <item name="app_toolbar" type="id" />
+    <item name="app_loading" type="id" />
+    <item name="app_camera" type="id" />
+
+    <!--**************************************************************************************** -->
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowDisablePreview">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="AppTheme.Rainbow" parent="AppTheme">
+        <item name="colorPrimary">@android:color/transparent</item>
+        <item name="android:textColorPrimary">@android:color/white</item>
+    </style>
+
+    <style name="AppTheme.Rainbow.FullScreen" parent="AppTheme">
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="KeyboardTextStyle" parent="@android:style/Widget.TextView">
+        <item name="android:layout_width">64dp</item>
+        <item name="android:layout_height">64dp</item>
+        <item name="android:textSize">32sp</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <!--**************************************************************************************** -->
+    <dimen name="base">8dp</dimen>
+    <dimen name="base_х2">16dp</dimen>
+    <dimen name="base_х3">24dp</dimen>
+    <!--**************************************************************************************** -->
+</resources>

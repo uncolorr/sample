@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/coordinatorLayout"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+
+    <LinearLayout
+        android:id="@+id/rootLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="56dp"
+            android:layout_height="4dp"
+            android:layout_marginTop="16dp"
+            android:layout_gravity="center"
+            android:background="@drawable/bottom_sheet_stick_drawable" />
+
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/textViewTitle"
+            style="@style/TitleMediumTextViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/base_х2"
+            android:layout_marginTop="@dimen/base_х2"
+            android:layout_marginRight="@dimen/base_х2"
+            android:text="@string/label_update_available"
+            android:textSize="20sp" />
+
+
+        <LinearLayout
+            android:id="@+id/layoutUpdateInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/textViewCurrentVersionName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/base_х2"
+                android:layout_marginTop="@dimen/base"
+                android:layout_marginRight="@dimen/base_х2"
+                android:textColor="@color/colorLightBlack"
+                android:textSize="16sp"
+                tools:text="Текущая версия: v1.0.1" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/textViewAvailableVersionName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/base_х2"
+                android:layout_marginTop="@dimen/base"
+                android:layout_marginRight="@dimen/base_х2"
+                android:textColor="@color/colorLightBlack"
+                android:textSize="16sp"
+                tools:text="Доступная версия: v1.0.3" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/textViewUpdateSize"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/base_х2"
+                android:layout_marginTop="@dimen/base"
+                android:layout_marginRight="@dimen/base_х2"
+                android:textColor="@color/colorLightBlack"
+                android:textSize="16sp"
+                tools:text="Размер обновления: 8.7 МБ" />
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/textViewCreationDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/base_х2"
+                android:layout_marginTop="@dimen/base"
+                android:layout_marginRight="@dimen/base_х2"
+                android:textColor="@color/colorLightBlack"
+                android:textSize="16sp"
+                tools:text="Дата выхода: 07/10/2020 17:51:40" />
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/buttonUpdate"
+                style="@style/Widget.MaterialComponents.Button.Icon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginLeft="@dimen/base_х2"
+                android:layout_marginTop="@dimen/base"
+                android:layout_marginRight="@dimen/base_х2"
+                android:text="Обновить"
+                android:textAllCaps="false"
+                app:backgroundTint="@color/colorBlue"
+                app:iconGravity="textStart" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/buttonLater"
+                style="@style/Widget.MaterialComponents.Button.Icon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginLeft="@dimen/base_х2"
+                android:layout_marginTop="@dimen/base"
+                android:layout_marginRight="@dimen/base_х2"
+                android:layout_marginBottom="@dimen/base_х2"
+                android:text="Позже"
+                android:textAllCaps="false"
+                android:textColor="@color/colorLightBlack"
+                app:backgroundTint="@color/colorWhite"
+                app:iconGravity="textStart"
+                app:iconTint="@color/colorLightBlack" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/layoutDownload"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/textViewDownloadingProgress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/base_х2"
+                android:layout_marginTop="@dimen/base"
+                android:layout_marginRight="@dimen/base_х2"
+                android:textAlignment="center"
+                android:textColor="@color/colorLightBlack"
+                tools:text="0.7 МБ / 8.7 МБ" />
+
+            <ProgressBar
+                android:id="@+id/progressBarDownloading"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/base_х2"
+                android:layout_marginTop="@dimen/base"
+                android:layout_marginRight="@dimen/base_х2"
+                android:theme="@style/BlueProgressBar" />
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/buttonCancel"
+                style="@style/Widget.MaterialComponents.Button.Icon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginLeft="@dimen/base_х2"
+                android:layout_marginTop="@dimen/base"
+                android:layout_marginRight="@dimen/base_х2"
+                android:layout_marginBottom="@dimen/base_х2"
+                android:text="Отмена"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite"
+                app:backgroundTint="@color/colorRed"
+                app:iconGravity="textStart"
+                app:iconTint="@color/colorLightBlack" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

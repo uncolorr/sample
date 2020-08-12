@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorTransparentBlack"
+    android:gravity="center">
+
+
+    <TextView
+        android:id="@+id/textViewResponseError"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:layout_margin="12dp"
+        android:textAlignment="center"
+        android:text="Ошибка отправки данных на сервер. Повторите попытку."/>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonRepeat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:backgroundTint="@color/colorRed"
+        android:layout_marginBottom="12dp"
+        android:textAllCaps="false"
+        android:text="Повторить"/>
+
+
+</LinearLayout>

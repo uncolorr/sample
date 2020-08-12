@@ -1,0 +1,32 @@
+<resources>
+
+    <style name="QrCodeReaderTheme" parent="Theme.MaterialComponents.Light">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@android:color/white</item>
+        <item name="colorPrimaryDark">@color/colorLightBlack</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="MaterialTheme" parent="Theme.MaterialComponents.Light">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@android:color/white</item>
+        <item name="colorPrimaryDark">@color/colorLightBlack</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="TitleMediumTextViewStyle" parent="android:Widget.TextView">
+        <item name="android:textColor">@color/colorLightBlack</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">22sp</item>
+    </style>
+
+
+    <style name="BlueProgressBar" parent="ThemeOverlay.AppCompat.Light">
+        <item name="colorAccent">@color/colorBlue</item>
+    </style>
+
+</resources>
